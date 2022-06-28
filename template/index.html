@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Regression Model</title>
+</head>
+
+<body>
+    <h1>This is a simple html form for input</h1>
+
+    <form method = "post" action="{{ url_for('predict')}}">
+        <label>X val</label><br>
+        <input type="text" name = 'Xval'><br><br>
+
+        <input type ="submit" value = "Predict"><br><br>
+    </form>
+
+    <br>
+    <br>
+  <b> {{ prediction_text }} </b>
+
+</body>
+</html>
