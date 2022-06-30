@@ -6,7 +6,8 @@ model = pickle.load(open('modelout.pkl', 'rb'))  # loading the model
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    #return render_template('index.html')
+    return "<h1>Hello</h1>"
 
 @app.route('/predict',methods=['POST'])
 def predict():
